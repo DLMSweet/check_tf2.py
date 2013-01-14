@@ -76,7 +76,7 @@ VAC (1 = On):            %s
         self.__str__()
 
     def print_nagios(self):
-        print "%s|%s" % ( self.status, self.performance_data)
+        print "%s; Current Map: %s|%s" % ( self.status, self.current_map, self.performance_data)
             
 if not len(sys.argv) == 3:
     print "Usage: %s HOSTNAME PORT" % sys.argv[0]
