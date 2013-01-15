@@ -53,8 +53,8 @@ class Check_TF2():
         self.server_VAC   = ord(data_split2[9])
         # I stopped caring at this point
         #print repr(data_split2[10:])
-        self.performance_data = "Users=%d;;;0;%d " % (self.num_players, self.max_players)
-        self.performance_data = self.performance_data+"Bots=%d;;;; " % (self.num_bots)
+        self.performance_data = "Users=%s " % (self.num_players)
+        self.performance_data = self.performance_data+"Bots=%s " % (self.num_bots)
 
     def __str__(self):
         print """
